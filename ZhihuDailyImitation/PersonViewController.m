@@ -17,6 +17,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor systemMintColor];
+    self.personView = [[PersonView alloc] initWithFrame: self.view.bounds];
+    [self.view addSubview: self.personView];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(pressBack) name: @"backNotification" object: nil];
+}
+
+- (void)pressBack {
+    [self.navigationController popViewControllerAnimated: YES];
 }
 
 /*

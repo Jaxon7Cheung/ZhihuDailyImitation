@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.topContentView = [[TopContentView alloc] initWithFrame: self.view.bounds];
+    //self.topContentView = [[TopContentView alloc] initWithFrame: self.view.bounds];
     [self setTopContentViewAndModel];
     
     self.navigationController.toolbarHidden = NO;
@@ -63,21 +63,21 @@
     }
     
     [[Manager sharedManager] requestExtraContentWithID: self.contentModel.storiesIDArray[self.currentPage - 1] StoriesExtraContentData:^(StoriesExtraContentModel * _Nonnull storiesExtraContentModel) {
-            [self.contentModel.storiesExtraContentDictionary setObject: storiesExtraContentModel forKey: self.contentModel.storiesIDArray[self.currentPage - 1]];
+                [self.contentModel.storiesExtraContentDictionary setObject: storiesExtraContentModel forKey: self.contentModel.storiesIDArray[self.currentPage - 1]];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self setToolBar];
+                });
+            } failure:^(NSError * _Nonnull error) {
+                NSLog(@"请求下一页额外消息失败");
+            }];
+        
+        [[Manager sharedManager] requestWebContentWithID: self.contentModel.storiesIDArray[self.currentPage - 1] StoriesContentData:^(StoriesContentModel * _Nonnull storiesContentModel) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self setToolBar];
+                [self.topContentView setNextWebImageWithString: storiesContentModel.share_url andIndex: self.currentPage - 1];
             });
         } failure:^(NSError * _Nonnull error) {
-            NSLog(@"请求下一页额外消息失败");
+            NSLog(@"请求下一页网页内容失败");
         }];
-    
-    [[Manager sharedManager] requestWebContentWithID: self.contentModel.storiesIDArray[self.currentPage - 1] StoriesContentData:^(StoriesContentModel * _Nonnull storiesContentModel) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.topContentView setNextWebImageWithString: storiesContentModel.share_url andIndex: self.currentPage - 1];
-        });
-    } failure:^(NSError * _Nonnull error) {
-        NSLog(@"请求下一页网页内容失败");
-    }];
 }
 
 #pragma mark 设置工具栏———————————
@@ -85,7 +85,7 @@
     StoriesExtraContentModel* storiesExtraContentModel = self.contentModel.storiesExtraContentDictionary[self.contentModel.storiesIDArray[self.currentPage - 1]];
     
     if (!self.backItem) {
-        UIBarButtonItem* flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+        UIBarButtonItem* flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target: nil action: nil];
         
         UIView* backView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 50, 50)];
         UIButton* backButton = [UIButton buttonWithType: UIButtonTypeCustom];

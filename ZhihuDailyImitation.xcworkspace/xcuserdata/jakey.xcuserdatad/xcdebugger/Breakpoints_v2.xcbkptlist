@@ -226,8 +226,8 @@
             filePath = "ZhihuDailyImitation/ContentView/TopContentView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-setNextWebImageWithString:andIndex:"
             landmarkType = "7">
          </BreakpointContent>
@@ -251,40 +251,56 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BC96F413-3DD7-430B-8A19-AC7988FD1F9D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZhihuDailyImitation/ContentView/ContentView.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "ContentView"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "05FC0B30-B5A8-455F-B06E-C51AEB9EA6CE"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhihuDailyImitation/ContentView/TopContentView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "-scrollViewDidEndDecelerating:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05FC0B30-B5A8-455F-B06E-C51AEB9EA6CE - 3023aef18cd7eee2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TopContentView scrollViewDidEndDecelerating:]"
+                  moduleName = "ZhihuDailyImitation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jakey/Desktop/CS/Xcode/ZhihuDailyImitation/ZhihuDailyImitation/ContentView/TopContentView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "05FC0B30-B5A8-455F-B06E-C51AEB9EA6CE - 3023aef18cd7ee03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TopContentView scrollViewDidEndDecelerating:]"
+                  moduleName = "ZhihuDailyImitation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jakey/Desktop/CS/Xcode/ZhihuDailyImitation/ZhihuDailyImitation/ContentView/TopContentView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BD69FED3-E27C-4E5A-A870-922D53F75E12"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhihuDailyImitation/ContentView/ContentView.m"
@@ -306,8 +322,8 @@
             filePath = "ZhihuDailyImitation/ContentViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -322,8 +338,8 @@
             filePath = "ZhihuDailyImitation/ContentViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-upDateRight:"
             landmarkType = "7">
             <Locations>
@@ -358,6 +374,22 @@
                   offsetFromSymbolStart = "84">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2332F31-9EA9-4888-AD6D-C493552BA0D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZhihuDailyImitation/ContentView/ContentView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-upDateRightWebView"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -38,6 +38,7 @@
 		A2CFDCB82AF77B6400F38184 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A2CFDCB72AF77B6400F38184 /* back.png */; };
 		A2CFDCBE2AF78F2C00F38184 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCBD2AF78F2C00F38184 /* ContentView.m */; };
 		A2CFDCC12AF78FAF00F38184 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCC02AF78FAF00F38184 /* ContentViewController.m */; };
+		A2CFDCC82AF8D91600F38184 /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCC72AF8D91600F38184 /* PersonView.m */; };
 		A2E1C6B72AF2984600EC2693 /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1C6B62AF2984600EC2693 /* ContentModel.m */; };
 		A2E1C6C02AF3444900EC2693 /* StoriesContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1C6BF2AF3444900EC2693 /* StoriesContentModel.m */; };
 		D445FB01D2BF96147F449569 /* Pods_ZhihuDailyImitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9B03B6AC194285E88A6C5 /* Pods_ZhihuDailyImitation.framework */; };
@@ -97,6 +98,8 @@
 		A2CFDCBD2AF78F2C00F38184 /* ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
 		A2CFDCBF2AF78FAF00F38184 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		A2CFDCC02AF78FAF00F38184 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		A2CFDCC62AF8D91600F38184 /* PersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
+		A2CFDCC72AF8D91600F38184 /* PersonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
 		A2E1C6B52AF2984600EC2693 /* ContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
 		A2E1C6B62AF2984600EC2693 /* ContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
 		A2E1C6BE2AF3444900EC2693 /* StoriesContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoriesContentModel.h; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 			children = (
 				A207E4B32AEFDF2E00F7E2E1 /* ManagerModel */,
 				A207E4B02AEF920D00F7E2E1 /* IMAGE */,
+				A2CFDCC22AF8D80600F38184 /* CollectionPage */,
 				A207E4CF2AF09CC100F7E2E1 /* PersonPage(Collection) */,
 				A2CE4D6A2AF2542900E6898A /* ContentPage */,
 				A207E4A62AEF883E00F7E2E1 /* MainPage */,
@@ -243,6 +247,8 @@
 			children = (
 				A207E4D02AF09CE800F7E2E1 /* PersonViewController.h */,
 				A207E4D12AF09CE800F7E2E1 /* PersonViewController.m */,
+				A2CFDCC62AF8D91600F38184 /* PersonView.h */,
+				A2CFDCC72AF8D91600F38184 /* PersonView.m */,
 			);
 			name = "PersonPage(Collection)";
 			path = ZhihuDailyImitation;
@@ -269,6 +275,14 @@
 				A2E1C6BD2AF299DE00EC2693 /* ContentController */,
 			);
 			name = ContentPage;
+			path = ZhihuDailyImitation;
+			sourceTree = "<group>";
+		};
+		A2CFDCC22AF8D80600F38184 /* CollectionPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CollectionPage;
 			path = ZhihuDailyImitation;
 			sourceTree = "<group>";
 		};
@@ -452,6 +466,7 @@
 				A2E1C6B72AF2984600EC2693 /* ContentModel.m in Sources */,
 				A2E1C6C02AF3444900EC2693 /* StoriesContentModel.m in Sources */,
 				A2CFDCBE2AF78F2C00F38184 /* ContentView.m in Sources */,
+				A2CFDCC82AF8D91600F38184 /* PersonView.m in Sources */,
 				A2CE4D732AF276B600E6898A /* TopContentView.m in Sources */,
 				A2CE4D612AF0ACC200E6898A /* TopStoriesCell.m in Sources */,
 				A207E4AC2AEF886C00F7E2E1 /* MainView.m in Sources */,

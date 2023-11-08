@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonViewController : UIViewController
+
+@property (nonatomic, strong)PersonView* personView;
 
 @end
 

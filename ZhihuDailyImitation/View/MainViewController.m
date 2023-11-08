@@ -29,7 +29,7 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden: NO animated: YES];
+    [self.navigationController setNavigationBarHidden: YES animated: YES];
 }
 
 - (void)viewDidLoad {
@@ -220,6 +220,7 @@
         [topContentViewController.contentModel.storiesIDArray addObject: stories.id];
     }
     topContentViewController.currentPage = index + 1;
+    topContentViewController.topContentView = [[TopContentView alloc] initWithFrame: self.view.bounds];
     
     [self.navigationController pushViewController: topContentViewController animated:YES];
 }

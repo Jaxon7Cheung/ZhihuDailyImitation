@@ -36,6 +36,16 @@
     }
 }
 
+- (void)setNextWebImageWithString:(NSString *)string andIndex:(NSInteger)index {
+    if ([self.currentWebViewSet containsObject: [NSNumber numberWithInteger: index]]) return;
+    
+    self.nextWebView = [[WKWebView alloc] initWithFrame: CGRectMake(Screen_WIDTH * index, 0, Screen_WIDTH, Screen_HEIGHT - 165)];
+    [[Manager sharedManager] setWebView: self.nextWebView WithString: string];
+    [self.scrollView addSubview: self.nextWebView];
+    
+    [self.currentWebViewSet addObject: [NSNumber numberWithInteger: index]];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

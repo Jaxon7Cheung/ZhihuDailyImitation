@@ -19,11 +19,12 @@
     self.backgroundColor = [UIColor whiteColor];
     
     self.scrollView = [[UIScrollView alloc] initWithFrame: self.bounds];
-    self.scrollView.backgroundColor = [UIColor systemMintColor];
+    self.scrollView.backgroundColor = [UIColor whiteColor];
     self.scrollView.contentSize = CGSizeMake(Screen_WIDTH * self.numberOfStories, 0);
     self.scrollView.contentOffset = CGPointMake(Screen_WIDTH * (self.currentPage - 1), 0);
     self.scrollView.pagingEnabled = YES;
     self.scrollView.bounces = NO;
+    self.scrollView.alwaysBounceHorizontal = NO;
     self.scrollView.showsHorizontalScrollIndicator = YES;
     self.scrollView.delegate = self;
     [self addSubview: self.scrollView];
@@ -32,7 +33,7 @@
 - (void)setNextWebImageWithString:(NSString *)string andIndex:(NSInteger)index {
     if ([self.currentWebViewSet containsObject: [NSNumber numberWithInteger: index]]) return;
     
-    self.nextWebView = [[WKWebView alloc] initWithFrame: CGRectMake(Screen_WIDTH * index, 0, Screen_WIDTH, Screen_HEIGHT - 125)];
+    self.nextWebView = [[WKWebView alloc] initWithFrame: CGRectMake(Screen_WIDTH * index, 0, Screen_WIDTH, Screen_HEIGHT - 165)];
     [[Manager sharedManager] setWebView: self.nextWebView WithString: string];
     [self.scrollView addSubview: self.nextWebView];
     

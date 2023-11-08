@@ -7,7 +7,6 @@
 
 
 #import "ContentViewController.h"
-#import "ContentView.h"
 
 #define Screen_WIDTH [UIScreen mainScreen].bounds.size.width
 
@@ -33,11 +32,15 @@
         [self.contentModel.storiesIDArray addObject: ID];
     }
     
-    self.topContentView.numberOfStories = [self.contentModel.storiesIDArray count];
-    self.topContentView.currentPage = self.currentPage;
+    self.contentView.numberOfStories = [self.contentModel.storiesIDArray count];
+    self.contentView.currentPage = self.currentPage;
+//    self.topContentView.numberOfStories = [self.contentModel.storiesIDArray count];
+//    self.topContentView.currentPage = self.currentPage;
     
-    ContentView* contentView = (ContentView *)self.topContentView;
-    [contentView upDateRightWebView];
+//    ContentView* contentView = (ContentView *)self.topContentView;
+    self.contentView = (ContentView *)self.topContentView;
+
+    [self.contentView upDateRightWebView];
 }
 
 
