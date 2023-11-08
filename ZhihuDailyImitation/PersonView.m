@@ -35,17 +35,15 @@
     self.backButton = [UIButton buttonWithType: UIButtonTypeCustom];
     [self.backButton setImage: [UIImage imageNamed: @"back.png"] forState: UIControlStateNormal];
     [self.backButton addTarget: self action: @selector(pressBack) forControlEvents: UIControlEventTouchUpInside];
-//    self.backButton = [UIButton systemButtonWithImage: [UIImage imageNamed: @"back.png"] target: self action: @selector(pressBack)];
     [self.navigationView addSubview: self.backButton];
     [self.backButton makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.backButton);
             make.left.equalTo(self.backButton);
     }];
 
-    self.avatar = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"avatar.png"]];
+    self.avatar = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"灰太狼.png"]];
     self.avatar.layer.cornerRadius = 64;
     self.avatar.clipsToBounds = YES;
-    //self.avatar.userInteractionEnabled = YES;
     [self.navigationView addSubview: self.avatar];
     [self.avatar makeConstraints:^(MASConstraintMaker *make) {
             make.height.and.width.equalTo(128);

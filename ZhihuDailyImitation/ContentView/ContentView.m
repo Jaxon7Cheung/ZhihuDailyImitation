@@ -7,6 +7,8 @@
 
 #import "ContentView.h"
 #define Screen_WIDTH [UIScreen mainScreen].bounds.size.width
+#define Screen_HEIGHT [UIScreen mainScreen].bounds.size.height
+#import "Manager.h"
 
 @implementation ContentView
 
