@@ -91,4 +91,17 @@ static id manager = nil;
     }];
 }
 
+- (void)requestCollectionContentWithID: (NSString *)string CollectionContentData: (CollectionContentBlock)success failure: (ErrorBlock)failure {
+    [[AFHTTPSessionManager manager] GET: [NSString stringWithFormat:  @"https://news-at.zhihu.com/api/4/news/%@", string] parameters: nil headers: nil progress: nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (success) {
+            CollectionContentModel* collectionContentModel = [[CollectionContentModel alloc] initWithDictionary: responseObject error: nil];
+            success(collectionContentModel);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+}
+
 @end

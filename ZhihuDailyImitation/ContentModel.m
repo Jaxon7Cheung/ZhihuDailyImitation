@@ -37,7 +37,7 @@
         if (result) {
             FMResultSet* resultSet = [self.likeDatabase executeQuery: @"SELECT * FROM likeDatabase"];
             while([resultSet next]) {
-                [self.storiesLikeSet addObject:[resultSet stringForColumn: @"idLabel"]];
+                [self.storiesLikeSet addObject: [resultSet stringForColumn: @"idLabel"]];
             }
             NSLog(@"create table succeed");
         } else {

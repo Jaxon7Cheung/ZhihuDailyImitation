@@ -9,13 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PersonView : UIView
+@interface PersonView : UIView <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)UIView* navigationView;
 @property (nonatomic, strong)UIButton* backButton;
-
-@property (nonatomic, strong)UIImageView* avatar;
-@property (nonatomic, strong)UILabel* personName;
 
 @property (nonatomic, strong)UITableView* tableView;
 

@@ -149,7 +149,7 @@
     } else {
         [self.likeButton setImage: [UIImage imageNamed: @"like.png"] forState: UIControlStateNormal];
         self.likeLabel.text = [NSString stringWithFormat: @"%ld", storiesExtraContentModel.popularity];
-        NSLog(@"%ld", storiesExtraContentModel.popularity);
+        //NSLog(@"%ld", storiesExtraContentModel.popularity);
     }
     
     if ([self.contentModel.storiesCollectSet containsObject: self.contentModel.storiesIDArray[self.currentPage - 1]]) {
@@ -170,15 +170,15 @@
     NSLog(@"pressedComment");
 }
 
-- (void)pressLike:(UIButton*)sender {
+- (void)pressLike:(UIButton*)button {
     if ([self.contentModel.storiesLikeSet containsObject: self.contentModel.storiesIDArray[self.currentPage - 1]]) {
         [self.contentModel.storiesLikeSet removeObject: self.contentModel.storiesIDArray[self.currentPage - 1]];
-        [sender setImage: [UIImage imageNamed: @"like.png"] forState: UIControlStateNormal];
+        [button setImage: [UIImage imageNamed: @"like.png"] forState: UIControlStateNormal];
         [self.contentModel deleteLikeSetWithID: self.contentModel.storiesIDArray[self.currentPage - 1]];
         
         self.likeLabel.text = [NSString stringWithFormat: @"%ld", [self.likeLabel.text integerValue] - 1];
     } else {
-        [sender setImage: [UIImage imageNamed: @"liked.png"] forState: UIControlStateNormal];
+        [button setImage: [UIImage imageNamed: @"liked.png"] forState: UIControlStateNormal];
         [self.contentModel.storiesLikeSet addObject: self.contentModel.storiesIDArray[self.currentPage - 1]];
         [self.contentModel saveStoriesLikeSet];
         
@@ -186,14 +186,14 @@
     }
 }
 
-- (void)pressCollect:(UIButton*)sender {
+- (void)pressCollect:(UIButton*)button {
     if ([self.contentModel.storiesCollectSet containsObject: self.contentModel.storiesIDArray[self.currentPage - 1]]) {
         [self.contentModel.storiesCollectSet removeObject: self.contentModel.storiesIDArray[self.currentPage - 1]];
-        [sender setImage: [UIImage imageNamed: @"collect.png"] forState: UIControlStateNormal];
+        [button setImage: [UIImage imageNamed: @"collect.png"] forState: UIControlStateNormal];
         [self.contentModel deleteCollectSetWithID: self.contentModel.storiesIDArray[self.currentPage - 1]];
     } else {
         [self.contentModel.storiesCollectSet addObject: self.contentModel.storiesIDArray[self.currentPage - 1]];
-        [sender setImage: [UIImage imageNamed: @"collected.png"] forState: UIControlStateNormal];
+        [button setImage: [UIImage imageNamed: @"collected.png"] forState: UIControlStateNormal];
         [self.contentModel saveStoriesCollectSet];
     }
 }

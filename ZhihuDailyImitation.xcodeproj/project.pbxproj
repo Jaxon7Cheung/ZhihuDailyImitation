@@ -39,6 +39,13 @@
 		A2CFDCBE2AF78F2C00F38184 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCBD2AF78F2C00F38184 /* ContentView.m */; };
 		A2CFDCC12AF78FAF00F38184 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCC02AF78FAF00F38184 /* ContentViewController.m */; };
 		A2CFDCC82AF8D91600F38184 /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCC72AF8D91600F38184 /* PersonView.m */; };
+		A2CFDCE22AFE135400F38184 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCE12AFE135400F38184 /* PersonCell.m */; };
+		A2CFDCF42AFE1B8500F38184 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCEE2AFE1B8500F38184 /* CollectionCell.m */; };
+		A2CFDCF52AFE1B8500F38184 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCF02AFE1B8500F38184 /* CollectionView.m */; };
+		A2CFDCF62AFE1B8500F38184 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCF22AFE1B8500F38184 /* CollectionViewController.m */; };
+		A2CFDCFE2AFE369A00F38184 /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCFD2AFE369A00F38184 /* CollectionModel.m */; };
+		A2CFDD012AFE36D500F38184 /* CollectionContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD002AFE36D500F38184 /* CollectionContentModel.m */; };
+		A2CFDD042AFE58EA00F38184 /* LastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD032AFE58EA00F38184 /* LastCell.m */; };
 		A2E1C6B72AF2984600EC2693 /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1C6B62AF2984600EC2693 /* ContentModel.m */; };
 		A2E1C6C02AF3444900EC2693 /* StoriesContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1C6BF2AF3444900EC2693 /* StoriesContentModel.m */; };
 		D445FB01D2BF96147F449569 /* Pods_ZhihuDailyImitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9B03B6AC194285E88A6C5 /* Pods_ZhihuDailyImitation.framework */; };
@@ -100,6 +107,20 @@
 		A2CFDCC02AF78FAF00F38184 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		A2CFDCC62AF8D91600F38184 /* PersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
 		A2CFDCC72AF8D91600F38184 /* PersonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
+		A2CFDCE02AFE135400F38184 /* PersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+		A2CFDCE12AFE135400F38184 /* PersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
+		A2CFDCEE2AFE1B8500F38184 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
+		A2CFDCEF2AFE1B8500F38184 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		A2CFDCF02AFE1B8500F38184 /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		A2CFDCF12AFE1B8500F38184 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		A2CFDCF22AFE1B8500F38184 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		A2CFDCF32AFE1B8500F38184 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		A2CFDCFC2AFE369A00F38184 /* CollectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionModel.h; sourceTree = "<group>"; };
+		A2CFDCFD2AFE369A00F38184 /* CollectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionModel.m; sourceTree = "<group>"; };
+		A2CFDCFF2AFE36D500F38184 /* CollectionContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionContentModel.h; sourceTree = "<group>"; };
+		A2CFDD002AFE36D500F38184 /* CollectionContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionContentModel.m; sourceTree = "<group>"; };
+		A2CFDD022AFE58EA00F38184 /* LastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastCell.h; sourceTree = "<group>"; };
+		A2CFDD032AFE58EA00F38184 /* LastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastCell.m; sourceTree = "<group>"; };
 		A2E1C6B52AF2984600EC2693 /* ContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
 		A2E1C6B62AF2984600EC2693 /* ContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
 		A2E1C6BE2AF3444900EC2693 /* StoriesContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoriesContentModel.h; sourceTree = "<group>"; };
@@ -132,7 +153,6 @@
 			children = (
 				A207E4B32AEFDF2E00F7E2E1 /* ManagerModel */,
 				A207E4B02AEF920D00F7E2E1 /* IMAGE */,
-				A2CFDCC22AF8D80600F38184 /* CollectionPage */,
 				A207E4CF2AF09CC100F7E2E1 /* PersonPage(Collection) */,
 				A2CE4D6A2AF2542900E6898A /* ContentPage */,
 				A207E4A62AEF883E00F7E2E1 /* MainPage */,
@@ -245,10 +265,9 @@
 		A207E4CF2AF09CC100F7E2E1 /* PersonPage(Collection) */ = {
 			isa = PBXGroup;
 			children = (
-				A207E4D02AF09CE800F7E2E1 /* PersonViewController.h */,
-				A207E4D12AF09CE800F7E2E1 /* PersonViewController.m */,
-				A2CFDCC62AF8D91600F38184 /* PersonView.h */,
-				A2CFDCC72AF8D91600F38184 /* PersonView.m */,
+				A2CFDCF72AFE1BB400F38184 /* CollectionPage */,
+				A2CFDCCA2AFB8C0300F38184 /* PersonView */,
+				A2CFDCC92AFB8BF100F38184 /* PersonController */,
 			);
 			name = "PersonPage(Collection)";
 			path = ZhihuDailyImitation;
@@ -278,12 +297,67 @@
 			path = ZhihuDailyImitation;
 			sourceTree = "<group>";
 		};
-		A2CFDCC22AF8D80600F38184 /* CollectionPage */ = {
+		A2CFDCC92AFB8BF100F38184 /* PersonController */ = {
 			isa = PBXGroup;
 			children = (
+				A207E4D02AF09CE800F7E2E1 /* PersonViewController.h */,
+				A207E4D12AF09CE800F7E2E1 /* PersonViewController.m */,
+			);
+			name = PersonController;
+			sourceTree = "<group>";
+		};
+		A2CFDCCA2AFB8C0300F38184 /* PersonView */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDCC62AF8D91600F38184 /* PersonView.h */,
+				A2CFDCC72AF8D91600F38184 /* PersonView.m */,
+				A2CFDCE02AFE135400F38184 /* PersonCell.h */,
+				A2CFDCE12AFE135400F38184 /* PersonCell.m */,
+			);
+			path = PersonView;
+			sourceTree = "<group>";
+		};
+		A2CFDCF72AFE1BB400F38184 /* CollectionPage */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDCFB2AFE1C1100F38184 /* CollectionModel */,
+				A2CFDCF92AFE1BEB00F38184 /* CollectionView */,
+				A2CFDCFA2AFE1BFA00F38184 /* CollectionController */,
 			);
 			name = CollectionPage;
-			path = ZhihuDailyImitation;
+			sourceTree = "<group>";
+		};
+		A2CFDCF92AFE1BEB00F38184 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDCF12AFE1B8500F38184 /* CollectionCell.h */,
+				A2CFDCEE2AFE1B8500F38184 /* CollectionCell.m */,
+				A2CFDD022AFE58EA00F38184 /* LastCell.h */,
+				A2CFDD032AFE58EA00F38184 /* LastCell.m */,
+				A2CFDCF32AFE1B8500F38184 /* CollectionView.h */,
+				A2CFDCF02AFE1B8500F38184 /* CollectionView.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		A2CFDCFA2AFE1BFA00F38184 /* CollectionController */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDCEF2AFE1B8500F38184 /* CollectionViewController.h */,
+				A2CFDCF22AFE1B8500F38184 /* CollectionViewController.m */,
+			);
+			name = CollectionController;
+			sourceTree = "<group>";
+		};
+		A2CFDCFB2AFE1C1100F38184 /* CollectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDCFC2AFE369A00F38184 /* CollectionModel.h */,
+				A2CFDCFD2AFE369A00F38184 /* CollectionModel.m */,
+				A2CFDCFF2AFE36D500F38184 /* CollectionContentModel.h */,
+				A2CFDD002AFE36D500F38184 /* CollectionContentModel.m */,
+			);
+			name = CollectionModel;
 			sourceTree = "<group>";
 		};
 		A2E1C6BB2AF2995200EC2693 /* ContentModel */ = {
@@ -451,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CFDCF62AFE1B8500F38184 /* CollectionViewController.m in Sources */,
 				A207E4952AEF881900F7E2E1 /* ViewController.m in Sources */,
 				A207E4C82AEFF8C500F7E2E1 /* NavigationModel.m in Sources */,
 				A207E48F2AEF881900F7E2E1 /* AppDelegate.m in Sources */,
@@ -460,14 +535,20 @@
 				A207E4A92AEF885600F7E2E1 /* MainViewController.m in Sources */,
 				A207E4CE2AF08F5A00F7E2E1 /* LatestStoriesModel.m in Sources */,
 				A2CFDCC12AF78FAF00F38184 /* ContentViewController.m in Sources */,
+				A2CFDCFE2AFE369A00F38184 /* CollectionModel.m in Sources */,
 				A207E4922AEF881900F7E2E1 /* SceneDelegate.m in Sources */,
 				A207E4B62AEFDF8F00F7E2E1 /* DateModel.m in Sources */,
 				A2CE4D672AF0ACDA00E6898A /* IndicatorCell.m in Sources */,
 				A2E1C6B72AF2984600EC2693 /* ContentModel.m in Sources */,
+				A2CFDD012AFE36D500F38184 /* CollectionContentModel.m in Sources */,
 				A2E1C6C02AF3444900EC2693 /* StoriesContentModel.m in Sources */,
 				A2CFDCBE2AF78F2C00F38184 /* ContentView.m in Sources */,
+				A2CFDD042AFE58EA00F38184 /* LastCell.m in Sources */,
 				A2CFDCC82AF8D91600F38184 /* PersonView.m in Sources */,
 				A2CE4D732AF276B600E6898A /* TopContentView.m in Sources */,
+				A2CFDCF42AFE1B8500F38184 /* CollectionCell.m in Sources */,
+				A2CFDCE22AFE135400F38184 /* PersonCell.m in Sources */,
+				A2CFDCF52AFE1B8500F38184 /* CollectionView.m in Sources */,
 				A2CE4D612AF0ACC200E6898A /* TopStoriesCell.m in Sources */,
 				A207E4AC2AEF886C00F7E2E1 /* MainView.m in Sources */,
 				A2CE4D702AF2734A00E6898A /* TopContentViewController.m in Sources */,
