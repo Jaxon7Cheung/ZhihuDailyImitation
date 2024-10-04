@@ -99,6 +99,28 @@
     return dayString;
 }
 
++ (NSString *)getCommentDateWithTimeString:(NSString *)timeString {
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat: @"MM-dd"];
+    
+    NSTimeInterval timeStamp = [timeString doubleValue];
+    NSDate* date = [NSDate dateWithTimeIntervalSince1970: timeStamp];
+    
+    NSString* dateString = [dateFormatter stringFromDate: date];
+    
+    return dateString;
+}
 
++ (NSString *)getCommentTimeWithTimeString:(NSString *)timeString {
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat: @"HH:ss"];
+    
+    NSTimeInterval timeStamp = [timeString doubleValue];
+    NSDate* time = [NSDate dateWithTimeIntervalSince1970: timeStamp];
+    
+    NSString* timeCommentString = [dateFormatter stringFromDate: time];
+    
+    return timeCommentString;
+}
 
 @end

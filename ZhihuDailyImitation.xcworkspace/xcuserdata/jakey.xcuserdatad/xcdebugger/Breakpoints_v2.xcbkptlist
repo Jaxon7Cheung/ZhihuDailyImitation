@@ -51,8 +51,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "276">
+                  endingLineNumber = "96">
                </Location>
                <Location
                   uuid = "5EA9298D-8652-4624-B741-3A6357557A87 - 105626f6b617352"
@@ -66,8 +65,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "344">
+                  endingLineNumber = "96">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -99,8 +97,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "1168">
+                  endingLineNumber = "113">
                </Location>
                <Location
                   uuid = "5CE187B3-D67F-4803-A978-5F997C0587AB - 105626f6b617521"
@@ -114,8 +111,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "1236">
+                  endingLineNumber = "113">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -178,8 +174,8 @@
             filePath = "ZhihuDailyImitation/TopContentViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-setTopContentViewAndModel"
             landmarkType = "7">
          </BreakpointContent>
@@ -194,8 +190,8 @@
             filePath = "ZhihuDailyImitation/TopContentViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-setTopContentViewAndModel"
             landmarkType = "7">
          </BreakpointContent>
@@ -275,8 +271,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "72">
+                  endingLineNumber = "43">
                </Location>
                <Location
                   uuid = "05FC0B30-B5A8-455F-B06E-C51AEB9EA6CE - 3023aef18cd7ee03"
@@ -290,8 +285,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "72">
+                  endingLineNumber = "44">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -355,8 +349,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "76">
+                  endingLineNumber = "32">
                </Location>
                <Location
                   uuid = "D9751B74-0DA0-4695-BF15-98476756ED70 - d7c702e433529333"
@@ -370,8 +363,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "84">
+                  endingLineNumber = "32">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -419,8 +411,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "420">
+                  endingLineNumber = "47">
                </Location>
                <Location
                   uuid = "4C2164BD-C899-40D4-AC06-0E4F7EFCCEA3 - ed22626d1431b69d"
@@ -434,8 +425,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "356">
+                  endingLineNumber = "47">
                </Location>
             </Locations>
          </BreakpointContent>

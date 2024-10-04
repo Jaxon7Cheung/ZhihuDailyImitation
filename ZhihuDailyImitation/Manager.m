@@ -104,4 +104,31 @@ static id manager = nil;
     }];
 }
 
+- (void)requestLongCommentsWithID:(NSString *)string CommentsContentData:(CommentsContentBlock)success failure:(ErrorBlock)failure {
+    [[AFHTTPSessionManager manager] GET: [NSString stringWithFormat:  @"https://news-at.zhihu.com/api/4/story/%@/long-comments", string] parameters: nil headers: nil progress: nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (success) {
+            CommentModel* commentModel = [[CommentModel alloc] initWithDictionary: responseObject error: nil];
+            success(commentModel);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+}
+
+- (void)requestShortCommentsWithID:(NSString *)string CommentsContentData:(CommentsContentBlock)success failure:(ErrorBlock)failure {
+    [[AFHTTPSessionManager manager] GET: [NSString stringWithFormat:  @"https://news-at.zhihu.com/api/4/story/%@/short-comments", string] parameters: nil headers: nil progress: nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (success) {
+            CommentModel* commentModel = [[CommentModel alloc] initWithDictionary: responseObject error: nil];
+            success(commentModel);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+}
+
+
 @end

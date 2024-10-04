@@ -106,7 +106,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger index = indexPath.row;
-    [[NSNotificationCenter defaultCenter] postNotificationName: @"pressCollectionCell" object: nil userInfo: @{@"value" : [NSNumber numberWithInteger: index]}];
+    if (indexPath.row != [self.titleArray count]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName: @"pressCollectionCell" object: nil userInfo: @{@"value" : [NSNumber numberWithInteger: index]}];
+    }
 }
 
 /*

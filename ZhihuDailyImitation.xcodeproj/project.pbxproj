@@ -46,6 +46,11 @@
 		A2CFDCFE2AFE369A00F38184 /* CollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDCFD2AFE369A00F38184 /* CollectionModel.m */; };
 		A2CFDD012AFE36D500F38184 /* CollectionContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD002AFE36D500F38184 /* CollectionContentModel.m */; };
 		A2CFDD042AFE58EA00F38184 /* LastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD032AFE58EA00F38184 /* LastCell.m */; };
+		A2CFDD0B2AFF652C00F38184 /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD0A2AFF652C00F38184 /* CommentView.m */; };
+		A2CFDD0E2AFF6B3B00F38184 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD0D2AFF6B3B00F38184 /* CommentCell.m */; };
+		A2CFDD112AFF6E0A00F38184 /* ReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD102AFF6E0A00F38184 /* ReplyCell.m */; };
+		A2CFDD142B00BEBF00F38184 /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD132B00BEBF00F38184 /* CommentModel.m */; };
+		A2CFDD172B00C24900F38184 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFDD162B00C24800F38184 /* CommentViewController.m */; };
 		A2E1C6B72AF2984600EC2693 /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1C6B62AF2984600EC2693 /* ContentModel.m */; };
 		A2E1C6C02AF3444900EC2693 /* StoriesContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E1C6BF2AF3444900EC2693 /* StoriesContentModel.m */; };
 		D445FB01D2BF96147F449569 /* Pods_ZhihuDailyImitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9B03B6AC194285E88A6C5 /* Pods_ZhihuDailyImitation.framework */; };
@@ -121,6 +126,16 @@
 		A2CFDD002AFE36D500F38184 /* CollectionContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionContentModel.m; sourceTree = "<group>"; };
 		A2CFDD022AFE58EA00F38184 /* LastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastCell.h; sourceTree = "<group>"; };
 		A2CFDD032AFE58EA00F38184 /* LastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastCell.m; sourceTree = "<group>"; };
+		A2CFDD092AFF652C00F38184 /* CommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentView.h; sourceTree = "<group>"; };
+		A2CFDD0A2AFF652C00F38184 /* CommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
+		A2CFDD0C2AFF6B3B00F38184 /* CommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		A2CFDD0D2AFF6B3B00F38184 /* CommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		A2CFDD0F2AFF6E0A00F38184 /* ReplyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplyCell.h; sourceTree = "<group>"; };
+		A2CFDD102AFF6E0A00F38184 /* ReplyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplyCell.m; sourceTree = "<group>"; };
+		A2CFDD122B00BEBF00F38184 /* CommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
+		A2CFDD132B00BEBF00F38184 /* CommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
+		A2CFDD152B00C24800F38184 /* CommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		A2CFDD162B00C24800F38184 /* CommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		A2E1C6B52AF2984600EC2693 /* ContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
 		A2E1C6B62AF2984600EC2693 /* ContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
 		A2E1C6BE2AF3444900EC2693 /* StoriesContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoriesContentModel.h; sourceTree = "<group>"; };
@@ -153,6 +168,7 @@
 			children = (
 				A207E4B32AEFDF2E00F7E2E1 /* ManagerModel */,
 				A207E4B02AEF920D00F7E2E1 /* IMAGE */,
+				A2CFDD052AFF647B00F38184 /* CommentPage */,
 				A207E4CF2AF09CC100F7E2E1 /* PersonPage(Collection) */,
 				A2CE4D6A2AF2542900E6898A /* ContentPage */,
 				A207E4A62AEF883E00F7E2E1 /* MainPage */,
@@ -360,6 +376,48 @@
 			name = CollectionModel;
 			sourceTree = "<group>";
 		};
+		A2CFDD052AFF647B00F38184 /* CommentPage */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDD062AFF649A00F38184 /* CommentModel */,
+				A2CFDD072AFF64AA00F38184 /* CommentView */,
+				A2CFDD082AFF64B700F38184 /* CommentController */,
+			);
+			name = CommentPage;
+			path = ZhihuDailyImitation;
+			sourceTree = "<group>";
+		};
+		A2CFDD062AFF649A00F38184 /* CommentModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDD122B00BEBF00F38184 /* CommentModel.h */,
+				A2CFDD132B00BEBF00F38184 /* CommentModel.m */,
+			);
+			name = CommentModel;
+			sourceTree = "<group>";
+		};
+		A2CFDD072AFF64AA00F38184 /* CommentView */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDD0C2AFF6B3B00F38184 /* CommentCell.h */,
+				A2CFDD0D2AFF6B3B00F38184 /* CommentCell.m */,
+				A2CFDD0F2AFF6E0A00F38184 /* ReplyCell.h */,
+				A2CFDD102AFF6E0A00F38184 /* ReplyCell.m */,
+				A2CFDD092AFF652C00F38184 /* CommentView.h */,
+				A2CFDD0A2AFF652C00F38184 /* CommentView.m */,
+			);
+			path = CommentView;
+			sourceTree = "<group>";
+		};
+		A2CFDD082AFF64B700F38184 /* CommentController */ = {
+			isa = PBXGroup;
+			children = (
+				A2CFDD152B00C24800F38184 /* CommentViewController.h */,
+				A2CFDD162B00C24800F38184 /* CommentViewController.m */,
+			);
+			name = CommentController;
+			sourceTree = "<group>";
+		};
 		A2E1C6BB2AF2995200EC2693 /* ContentModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,11 +587,13 @@
 				A207E4952AEF881900F7E2E1 /* ViewController.m in Sources */,
 				A207E4C82AEFF8C500F7E2E1 /* NavigationModel.m in Sources */,
 				A207E48F2AEF881900F7E2E1 /* AppDelegate.m in Sources */,
+				A2CFDD0B2AFF652C00F38184 /* CommentView.m in Sources */,
 				A207E4CB2AF08F4800F7E2E1 /* StoriesModel.m in Sources */,
 				A207E4A02AEF881B00F7E2E1 /* main.m in Sources */,
 				A2CE4D642AF0ACCE00E6898A /* StoriesCell.m in Sources */,
 				A207E4A92AEF885600F7E2E1 /* MainViewController.m in Sources */,
 				A207E4CE2AF08F5A00F7E2E1 /* LatestStoriesModel.m in Sources */,
+				A2CFDD172B00C24900F38184 /* CommentViewController.m in Sources */,
 				A2CFDCC12AF78FAF00F38184 /* ContentViewController.m in Sources */,
 				A2CFDCFE2AFE369A00F38184 /* CollectionModel.m in Sources */,
 				A207E4922AEF881900F7E2E1 /* SceneDelegate.m in Sources */,
@@ -541,6 +601,8 @@
 				A2CE4D672AF0ACDA00E6898A /* IndicatorCell.m in Sources */,
 				A2E1C6B72AF2984600EC2693 /* ContentModel.m in Sources */,
 				A2CFDD012AFE36D500F38184 /* CollectionContentModel.m in Sources */,
+				A2CFDD0E2AFF6B3B00F38184 /* CommentCell.m in Sources */,
+				A2CFDD112AFF6E0A00F38184 /* ReplyCell.m in Sources */,
 				A2E1C6C02AF3444900EC2693 /* StoriesContentModel.m in Sources */,
 				A2CFDCBE2AF78F2C00F38184 /* ContentView.m in Sources */,
 				A2CFDD042AFE58EA00F38184 /* LastCell.m in Sources */,
@@ -552,6 +614,7 @@
 				A2CE4D612AF0ACC200E6898A /* TopStoriesCell.m in Sources */,
 				A207E4AC2AEF886C00F7E2E1 /* MainView.m in Sources */,
 				A2CE4D702AF2734A00E6898A /* TopContentViewController.m in Sources */,
+				A2CFDD142B00BEBF00F38184 /* CommentModel.m in Sources */,
 				A207E4B92AEFDF9800F7E2E1 /* Manager.m in Sources */,
 				A207E4D22AF09CE800F7E2E1 /* PersonViewController.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 #import "TopContentViewController.h"
 #import "StoriesContentModel.h"
 #import "Manager.h"
+#import "CommentViewController.h"
 
 @interface TopContentViewController ()
 
@@ -167,7 +168,16 @@
 }
 
 - (void)pressComment {
-    NSLog(@"pressedComment");
+    StoriesExtraContentModel* storiesExtraContentModel = self.contentModel.storiesExtraContentDictionary[self.contentModel.storiesIDArray[self.currentPage - 1]];
+    
+    CommentViewController* commentViewController = [[CommentViewController alloc] init];
+    commentViewController.comments = storiesExtraContentModel.comments;
+    commentViewController.isLong = (storiesExtraContentModel.long_comments != 0);
+    commentViewController.isShort = (storiesExtraContentModel.short_comments != 0);
+    commentViewController.ID = self.contentModel.storiesIDArray[self.currentPage - 1];
+    
+    self.navigationController.toolbarHidden = YES;
+    [self.navigationController pushViewController: commentViewController animated: YES];
 }
 
 - (void)pressLike:(UIButton*)button {

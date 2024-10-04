@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)getDateWithTimeString: (NSString *)timeString;
 + (NSString *)getBeforeDateWithTimeString: (NSString *)timeString;
 
++ (NSString *)getCommentDateWithTimeString: (NSString *)timeString;
++ (NSString *)getCommentTimeWithTimeString: (NSString *)timeString;
+
 @end
 
 NS_ASSUME_NONNULL_END

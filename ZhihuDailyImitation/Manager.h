@@ -11,6 +11,7 @@
 #import "WebKit/WebKit.h"
 #import "StoriesContentModel.h"
 #import "CollectionContentModel.h"
+#import "CommentModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,8 @@ typedef void(^BeforeStoriesModelBlock)(StoriesModel* beforeStoriesModel);
 typedef void(^StoriesContentBlock)(StoriesContentModel* storiesContentModel);
 typedef void(^StoriesExtraContentBlock)(StoriesExtraContentModel* storiesExtraContentModel);
 typedef void(^CollectionContentBlock)(CollectionContentModel* collectionContentModel);
+typedef void(^CommentsContentBlock)(CommentModel* commentModel);
+
 typedef void(^ErrorBlock)(NSError* error);
 
 @interface Manager : NSObject
@@ -38,6 +41,10 @@ typedef void(^ErrorBlock)(NSError* error);
 - (void)requestExtraContentWithID: (NSString *)string StoriesExtraContentData: (StoriesExtraContentBlock)success failure: (ErrorBlock)failure;
 
 - (void)requestCollectionContentWithID: (NSString *)string CollectionContentData: (CollectionContentBlock)success failure: (ErrorBlock)failure;
+
+- (void)requestLongCommentsWithID: (NSString *)string CommentsContentData: (CommentsContentBlock)success failure: (ErrorBlock)failure;
+
+- (void)requestShortCommentsWithID: (NSString *)string CommentsContentData: (CommentsContentBlock)success failure: (ErrorBlock)failure;
 
 @end
 
